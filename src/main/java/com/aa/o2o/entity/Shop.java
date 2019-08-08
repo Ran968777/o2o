@@ -11,10 +11,10 @@ public class Shop {
 	private String shopImg;
 	private Integer priority;
 	private Date createTime;
-	private Date laseEditTime;
-	//-1²»¿ÉÓÃ   0ÉóºËÖÐ  1¿ÉÓÃ
-	private Integer enableStstus;
-	//³¬¼¶¹ÜÀíÔ±¸øµê¼ÒµÄÌáÐÑ	
+	private Date lastEditTime;
+	//-1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   0ï¿½ï¿½ï¿½ï¿½ï¿½  1ï¿½ï¿½ï¿½ï¿½
+	private Integer enableStatus;
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½	
 	private String advice;
 	private Area area;
 	private PersonInfo owner;
@@ -69,17 +69,19 @@ public class Shop {
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
-	public Date getLaseEditTime() {
-		return laseEditTime;
+	
+	public Date getLastEditTime() {
+		return lastEditTime;
 	}
-	public void setLaseEditTime(Date laseEditTime) {
-		this.laseEditTime = laseEditTime;
+	public void setLastEditTime(Date lastEditTime) {
+		this.lastEditTime = lastEditTime;
 	}
-	public Integer getEnableStstus() {
-		return enableStstus;
+
+	public Integer getEnableStatus() {
+		return enableStatus;
 	}
-	public void setEnableStstus(Integer enableStstus) {
-		this.enableStstus = enableStstus;
+	public void setEnableStatus(Integer enableStatus) {
+		this.enableStatus = enableStatus;
 	}
 	public String getAdvice() {
 		return advice;
